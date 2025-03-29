@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/marcomissana007/ChefBot/issues"
   },
-  "homepage": "https://github.com/marcomissana007/ChefBot#readme"
+  "homepage": "https://github.com/marcomissana007/ChefBot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "type": "module"
 }
