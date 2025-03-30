@@ -34,7 +34,8 @@ bot.on("message", async (msg) => {
         await mealComponent.build(mealName);
 
         if (mealComponent.getPhoto != null) {
-            bot.sendPhoto(chatId, mealComponent.getPhoto(), {caption: mealComponent.getInfos(), parse_mode: "Html", disable_web_page_preview: true});
+            bot.sendPhoto(chatId, mealComponent.getPhoto());
+            bot.sendMessage(chatId, mealComponent.getInfos(), {parse_mode: "Html", disable_web_page_preview: true});
         } else {
             bot.sendMessage(chatId, mealComponent.getInfos());
         }
